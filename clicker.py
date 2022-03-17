@@ -1,25 +1,22 @@
-import pyautogui as pg
+import pyautogui as ag
 from time import sleep
-import keyboard
 
-pg.click(339,294)
+ag.click(339,294)
 
 def movingUpdate(positions):
     for x,y in positions.items():
-        pg.moveTo(x,y,1,pg.easeInQuad)
-        pg.click()
+        ag.moveTo(x,y,1,ag.easeInQuad)
+        ag.click()
         sleep(1)
 
 while True:
-    if keyboard.is_pressed('esc'):
-        break
     movingUpdate({
         339:294,
         674:324,
         817:469,
     })
-    sleep(30)
+    sleep(15)
 
-    pg.moveTo(28,245,2,pg.easeInQuad)
-    pg.click()
+    ag.moveTo(28,245,2,pg.easeInQuad)
+    ag.click()
     sleep(1)
