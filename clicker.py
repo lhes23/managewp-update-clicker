@@ -17,6 +17,6 @@ while True:
     })
     sleep(15)
 
-    ag.moveTo(28,245,2,pg.easeInQuad)
+    ag.moveTo(28,245,2,ag.easeInQuad)
     ag.click()
     sleep(1)
