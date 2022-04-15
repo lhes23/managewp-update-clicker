@@ -1,13 +1,19 @@
 import pyautogui as ag
 from time import sleep
 
-ag.click(339,294)
+ag.moveTo(339,294,2,ag.easeInQuad)
+ag.click()
 
 def movingUpdate(positions):
     for x,y in positions.items():
-        ag.moveTo(x,y,1,ag.easeInQuad)
+        ag.moveTo(x,y,3,ag.easeInQuad)
         ag.click()
-        sleep(1)
+        sleep(3)
+    sleep(45)
+
+    ag.moveTo(28,245,2,ag.easeInQuad)
+    ag.click()
+    sleep(3)
 
 while True:
     movingUpdate({
@@ -15,8 +21,3 @@ while True:
         674:324,
         817:469,
     })
-    sleep(15)
-
-    ag.moveTo(28,245,2,ag.easeInQuad)
-    ag.click()
-    sleep(1)
