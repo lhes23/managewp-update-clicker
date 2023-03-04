@@ -1,8 +1,6 @@
 import pyautogui as ag
 from time import sleep
 
-# ag.moveTo(339,294,2,ag.easeInQuad)
-
 def movingUpdate(positions):
     for x,y in positions.items():
         ag.moveTo(x,y,3,ag.easeInQuad)
