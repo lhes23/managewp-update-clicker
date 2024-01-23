@@ -1,8 +1,8 @@
 import pyautogui as ag
 from time import sleep
 
-initial_x = 496
-initial_y = 350
+initial_x = 385
+initial_y = 347
 
 def movingUpdate(positions):
     for x,y in positions.items():
@@ -11,7 +11,7 @@ def movingUpdate(positions):
         sleep(3)
     sleep(45)
 
-    ag.moveTo(19,231,2,ag.easeInQuad)
+    ag.moveTo(20,243,2,ag.easeInQuad)
     ag.click()
     sleep(3)
 
