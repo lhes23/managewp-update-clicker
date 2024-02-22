@@ -21,6 +21,6 @@ ag.click()
 while True:
     movingUpdate({
         initial_x:initial_y,
-        683:372,
-        871:476,
+        986:377,
+        802:445 ,
     })
